@@ -223,7 +223,8 @@ h2 {
 
 .container {
   max-width: 1140px;
-  align-items: center;
+  /*align-items: center;*/
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,4 +268,40 @@ h2 {
     width: 90%;
   }
 }
-/*test*/
+
+/*contact-us*/
+
+.contact-us {
+  display: grid;
+}
+
+.contact-us__map {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .contact-us {
+    grid-template-areas:
+      "form address"
+      "form map"
+      "form icons";
+    grid-template-columns: 30fr 70fr;
+  }
+
+  .contact-us__form {
+    grid-area: form;
+  }
+
+  .contact-us__map {
+    grid-area: map;
+    display: block;
+  }
+
+  .contact-us__address {
+    grid-area: address;
+  }
+
+  .contact-us__icons {
+    grid-area: icons;
+  }
+}

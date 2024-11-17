@@ -305,3 +305,21 @@ h2 {
     grid-area: icons;
   }
 }
+
+/*Icons*/
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+  cursor: pointer;
+}

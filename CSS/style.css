@@ -313,6 +313,11 @@ h2 {
   height: 40px;
 }
 
+.icon--small {
+  width: 32px;
+  height: 32px;
+}
+
 .icon-container {
   width: 64px;
   height: 64px;
@@ -333,4 +338,26 @@ h2 {
 .contact-us__icons .icon-holder {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon-holder__label {
+  margin-left: 1.5rem;
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us__icons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-us__icons .icon-holder {
+    flex-direction: column;
+    margin: 1rem 1rem;
+  }
+
+  .icon-holder__label {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
 }

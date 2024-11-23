@@ -309,18 +309,13 @@ h2 {
 /*Icons*/
 
 .icon {
-  width: 40px;
-  height: 40px;
-}
-
-.icon--small {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-container {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +344,7 @@ h2 {
 @media screen and (min-width: 1024px) {
   .contact-us__icons {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .contact-us__icons .icon-holder {
     flex-direction: column;
@@ -359,5 +354,23 @@ h2 {
   .icon-holder__label {
     font-size: 1.4rem;
     margin-top: 1rem;
+  }
+}
+/* Social Media */
+
+.contact-us__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us__social {
+    justify-content: center;
+  }
+
+  .contact-us__social .icon-container {
+    margin-left: 2rem;
   }
 }

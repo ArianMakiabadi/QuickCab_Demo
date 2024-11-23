@@ -379,6 +379,7 @@ h2 {
 .contact-us__map img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .form-wrapper {
@@ -397,7 +398,6 @@ h2 {
 .form-wrapper form {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 70%;
 }
 

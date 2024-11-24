@@ -22,6 +22,7 @@
 /*To make each rem - 10px for easier usage of rem later on*/
 html {
   font-size: 62.5%;
+  /* font-family: sans-serif; */
 }
 
 body {
@@ -436,4 +437,49 @@ textarea {
   .contact-us__form {
     margin-right: 3rem;
   }
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: black;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  margin-left: 3rem;
+  gap: 1.6rem 3.6rem;
+}
+
+.footer__item {
+  margin-bottom: 2.5rem;
+}
+.footer__item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 3.5rem;
+  display: block;
+}
+
+.footer__item h6 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.footer__item a img {
+  height: 38px;
+  width: 128px;
+}
+
+.footer__item.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 270px;
 }

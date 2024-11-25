@@ -483,3 +483,17 @@ textarea {
   justify-content: space-between;
   max-width: 270px;
 }
+
+@media screen and (min-width: 600px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

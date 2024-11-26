@@ -95,7 +95,7 @@ h2 {
     font-size: 1.6rem;
   }
 
-  .btn--block {
+  main .btn--block {
     font-size: 2rem;
   }
 }
@@ -518,6 +518,15 @@ textarea {
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
+  max-height: 0;
+  /* opacity: 0; */
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+nav.nav__expanded .nav__list {
+  max-height: 100vh;
+  /* opacity: 1; */
 }
 
 .nav__item {
@@ -540,13 +549,26 @@ textarea {
   background-color: gold;
 }
 
+.nav__item.cta {
+  font-size: 1.4rem;
+  border-bottom: 0;
+}
+
+.nav__item.cta > a {
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
+  .nav {
+    padding: 0 2rem;
+  }
   .nav__toggler {
     display: none;
   }
 
   .nav__item {
     margin-left: 2rem;
+    margin-bottom: 0;
     font-size: 1.6rem;
   }
 
@@ -554,6 +576,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     width: auto;
+    max-height: 100%;
   }
 
   .nav__item {

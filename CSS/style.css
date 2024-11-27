@@ -601,7 +601,7 @@ nav.nav__expanded .nav__list {
 }
 
 .nav.nav__expanded .bar-one {
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
   margin: 8px 0;
 }
 

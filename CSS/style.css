@@ -30,6 +30,10 @@ body {
   font-size: 1.4rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-body);
+}
 h1,
 h2,
 h3 {
@@ -581,15 +585,15 @@ nav.nav__expanded .nav__list {
   }
 }
 
-/*TOGGLER*/
+/*Hamburger*/
 
 .nav__toggler {
   cursor: pointer;
 }
 
 .bar {
-  width: 25px;
-  height: 3px;
+  width: 24px;
+  height: 2px;
   background-color: #959494;
   margin: 5px 0;
   border-radius: 5px;
@@ -659,11 +663,30 @@ nav.nav__expanded .nav__list {
 }
 
 .intro-btn__passenger {
-  background-color: #fff;
   border-radius: 12px;
   margin-bottom: 2rem;
   padding: 12px;
   width: 220px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-btn__passenger.btn--white {
+  background-color: #fff;
+}
+
+.intro-btn__passenger.btn--transparent {
+  border: 2px solid white;
+  color: white;
+}
+
+.intro-btn__passenger p {
+  justify-self: center;
+}
+
+.intro-btn__passenger span {
+  margin-right: 10px;
 }
 
 .intro-wrapper {
@@ -687,6 +710,8 @@ nav.nav__expanded .nav__list {
     width: 530px;
     padding: 25px;
     border-radius: 20px;
+    margin-bottom: 50px;
+    margin-right: 10%;
   }
 
   .intro-btn h1 {
@@ -697,6 +722,6 @@ nav.nav__expanded .nav__list {
   }
 
   .intro-btn__passenger p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }

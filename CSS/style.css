@@ -725,3 +725,49 @@ nav.nav__expanded .nav__list {
     font-size: 1.6rem;
   }
 }
+
+/*Services*/
+
+.services__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.services__tabs a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+}
+
+.services__tabs .tab > p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.services__tabs img {
+  max-width: 100px;
+}
+
+.services__tabs .tab {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.services__tabs .tab:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .services__tabs img {
+    max-width: 180px;
+  }
+
+  .services__tabs .tab > p {
+    font-size: 2rem;
+  }
+}

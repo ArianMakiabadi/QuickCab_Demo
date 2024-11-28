@@ -728,11 +728,17 @@ nav.nav__expanded .nav__list {
 
 /*Services*/
 
+.services__title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
 .services__tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   overflow: auto;
+  padding: 5px 0 15px;
 }
 
 .services__tabs a {
@@ -742,15 +748,17 @@ nav.nav__expanded .nav__list {
   text-decoration: none;
   color: #444;
   cursor: pointer;
+  padding: 0 10px;
 }
 
 .services__tabs .tab > p {
   margin-top: 1.5rem;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .services__tabs img {
-  max-width: 100px;
+  width: 80px;
 }
 
 .services__tabs .tab {
@@ -762,12 +770,44 @@ nav.nav__expanded .nav__list {
   opacity: 1;
 }
 
+.services .feature__title {
+  margin: 1.5rem 0;
+}
+
+.services .feature__image {
+  display: none;
+}
+
+.tab-content {
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+.feature__detail {
+  width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
+  .services__title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .services .feature__image {
+    display: block;
+  }
   .services__tabs img {
-    max-width: 180px;
+    max-width: 100%;
   }
 
   .services__tabs .tab > p {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .feature__detail {
+    width: 70%;
   }
 }

@@ -22,8 +22,454 @@
     />
   </head>
   <body>
-    <main></main>
-    <footer class="main-footer"></footer>
+    <header class="main-header">
+      <nav class="nav container">
+        <a href="#"><img src="/assets/images/Le-Cab.png" alt="" /></a>
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#home">Home</a></li>
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#services">Services</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
+          <li class="nav__item cta">
+            <a href="#" class="btn btn--primary btn--block">Download</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <picture>
+          <source
+            srcset="/assets/images/banner-mobile.jpg"
+            type="image/jpg"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="/assets/images/banner.jpg"
+            type="image/jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="/assets/images/banner-mobile.jpg"
+            alt="banner"
+            class="banner-img"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="https://tapsi.ir/images/home/mockup-phone.webp"
+            type="image/webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="https://tapsi.ir/images/home/mockup-phone.png"
+            type="image/png"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="/assets/images/mockup-phone.png"
+            alt="phone"
+            class="banner-phone"
+          />
+        </picture>
+
+        <div class="hero-wrapper">
+          <div class="intro-btn">
+            <h1>leCab</h1>
+            <h2>Request rides and delivery services</h2>
+            <div class="intro-wrapper">
+              <a href="#" class="intro-btn__passenger btn--white">
+                <span><i class="fa-solid fa-download"></i></span>
+                <p>Passengers app</p>
+              </a>
+              <a href="#" class="intro-btn__passenger btn--white">
+                <span><i class="fa-solid fa-code"></i></span>
+                <p>Passenger Web App</p>
+              </a>
+              <a href="#" class="intro-btn__passenger btn--transparent">
+                <span><i class="fa-solid fa-download"></i></span>
+                <p>Drivers app</p>
+              </a>
+              <a href="#" class="intro-btn__passenger btn--transparent">
+                <span><i class="fa-solid fa-car"></i></span>
+                <p>Driver Signup</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="services container block">
+        <h2 class="services__title">leCab Services</h2>
+        <div class="services__tabs">
+          <a class="tab active" data-tab-target="nav-classic-tab">
+            <img src="/assets/images/cc-classic.png" alt="classic-icon" />
+            <p>leCab Classic</p>
+          </a>
+          <a class="tab" data-tab-target="nav-motopeyk-tab">
+            <img src="/assets/images/cc-motopeyk.png" alt="motopeyk-icon" />
+            <p>MotoCourier</p>
+          </a>
+          <a class="tab" data-tab-target="nav-autopeyk-tab">
+            <img src="/assets/images/cc-autopeyk.png" alt="autopeyk-icon" />
+            <p>AutoCourier</p>
+          </a>
+          <a class="tab" data-tab-target="nav-plus-tab">
+            <img src="/assets/images/cc-plus.png" alt="plus-icon" />
+            <p>leCab Plus</p>
+          </a>
+          <a class="tab" data-tab-target="nav-tel-tab">
+            <img src="/assets/images/cc-tel.png" alt="tel-icon" />
+            <p>CallCab</p>
+          </a>
+          <a class="tab" data-tab-target="nav-hamkhat-tab">
+            <img src="/assets/images/cc-hamkhat.png" alt="hamkhat-icon" />
+            <p>LineCab</p>
+          </a>
+          <a class="tab" data-tab-target="nav-taxi-tab">
+            <img src="/assets/images/cc-taxi.png" alt="taxi-icon" />
+            <p>Taxi</p>
+          </a>
+          <a class="tab" data-tab-target="nav-line-tab">
+            <img src="/assets/images/cc-line.png" alt="line-icon" />
+            <p>ShareCab</p>
+          </a>
+        </div>
+        <div class="container" style="position: relative">
+          <div class="tab-content active" id="nav-classic-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">leCab Classic</h3>
+              <p class="feature__text">
+                With leCab Classic service, you have a dedicated car to reach
+                your destination. leCab Classic offers a fast and easy way for
+                inner-city trips at any time of the day. In this service, you
+                also have the option to set two or more destinations and make
+                stops along the way.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-classic.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-motopeyk-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">MotoCourier</h3>
+              <p class="feature__text">
+                With the MotoCourier service, your packages and parcels are
+                delivered to their destination by motorbike couriers. This
+                service is ideal when you want your shipment to reach its
+                destination faster. You can also track the parcel's route to its
+                destination in real-time on the map.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-motopeyk.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-autopeyk-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">AutoCourier</h3>
+              <p class="feature__text">
+                AutoCourier is a service for delivering your packages by car.
+                This service is suitable when your packages cannot be delivered
+                by motorbike or require extra care during transportation. With
+                this service, you can also track the real-time location of your
+                package until it reaches its destination.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-autopeyk.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-plus-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">leCab Plus</h3>
+              <p class="feature__text">
+                In leCab Plus service, a higher-end and newer model car will
+                pick you up. Additionally, the drivers of this service have
+                received the highest ratings from passengers. This service, also
+                allows you to set multiple destinations or make stops during
+                your trip.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-plus.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-tel-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">CallCab</h3>
+              <p class="feature__text">
+                The CallCab Phone Service, or 1630, allows you to request a car
+                without needing internet or the app. This phone-based taxi
+                service is ideal for times when you don't have access to the
+                internet or the app. It is also a convenient solution for
+                individuals who find using mobile apps challenging.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-tel.webp" alt="" />
+            </div>
+          </div>
+
+          <div class="tab-content" id="nav-hamkhat-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">LineCab</h3>
+              <p class="feature__text">
+                The leCab's LineCab service uses minibuses to take you to your
+                destination. With this service, you can select your travel
+                route, purchase your ticket, and reach your destination faster
+                and more comfortably. LineCab is significantly cheaper than
+                other leCab services and provides a quicker and more convenient
+                alternative to public transportation. You can also reserve your
+                ticket in advance and travel while maintaining social
+                distancing.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-hamkhat.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-taxi-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">Taxi</h3>
+              <p class="feature__text">
+                In leCab's Taxi service, yellow taxis take you to your
+                destination. This service is a suitable option if you prefer
+                using a taxi, especially for reasons such as entering traffic
+                restriction zones or air pollution control areas.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-taxi.webp" alt="" />
+            </div>
+          </div>
+          <div class="tab-content" id="nav-line-tab">
+            <div class="feature__detail">
+              <h3 class="feature__title">LineCab</h3>
+              <p class="feature__text">
+                LineCab is a service that allows for shared rides. In this
+                service, you travel with another passenger who shares a similar
+                route, and the trip cost is split between you.
+              </p>
+            </div>
+            <div class="feature__image">
+              <img src="/assets/images/illus-line.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature container">
+        <div class="feature__image">
+          <img src="./assets/images/i-mac-1.png" alt="" />
+        </div>
+        <div class="feature__details">
+          <h2 class="feature__title">leCab Business Solutions</h2>
+          <p class="feature__text">
+            leCab's Corporate Panel is a web-based system that allows businesses
+            and organizations to easily request an unlimited number of cars and
+            couriers simultaneously. Using it, you can easily manage your urban
+            missions and delivery of goods.
+          </p>
+          <button class="btn btn--primary">Login for Organizations</button>
+        </div>
+      </section>
+      <section class="feature container gift-card">
+        <div class="feature__image">
+          <img src="./assets/images/macbook.png" alt="" />
+        </div>
+        <div class="feature__details">
+          <h2 class="feature__title">Buy leCab gift card</h2>
+          <p class="feature__text">
+            The leCab Credit Code allows users, businesses, and organizations to
+            enjoy discounts on leCab rides equivalent to the purchased credit
+            amount. In just a few minutes, you can obtain this code and share it
+            with your employees and customers.
+          </p>
+          <button class="btn btn--primary">Buy leCab gift card</button>
+        </div>
+      </section>
+      <div class="block_plan container">
+        <div class="plan">
+          <div class="card">
+            <header class="card__header">
+              <span class="plan__intro"
+                ><span class="plan__name">Economy</span>
+                <span class="badge">10% OFF</span>
+              </span>
+              <span class="plan__price">100 Euros</span>
+              <span class="plan__billing-cycle">(Monthly)</span>
+              <span class="plan__description">Classic Taxi Service</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--primary btn--block">Book Service</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card">
+            <header class="card__header">
+              <span class="plan__intro"
+                ><span class="plan__name">Business</span>
+                <span class="badge">15% OFF</span>
+              </span>
+              <span class="plan__price">300 Euros</span>
+              <span class="plan__billing-cycle">(Monthly)</span>
+              <span class="plan__description">Classic Taxi Service</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--primary btn--block">Book Service</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card">
+            <header class="card__header">
+              <span class="plan__intro"
+                ><span class="plan__name">V.I.P</span>
+                <span class="badge">10% OFF</span>
+              </span>
+              <span class="plan__price">1000 Euros</span>
+              <span class="plan__billing-cycle">(Monthly)</span>
+              <span class="plan__description">Classic Taxi Service</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--primary btn--block">Book Service</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="contact-us container">
+        <div class="contact-us__social">
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="assets/images/svg-sprite.svg#linkedin"></use>
+            </svg>
+          </span>
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="assets/images/svg-sprite.svg#telegram"></use>
+            </svg>
+          </span>
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="assets/images/svg-sprite.svg#twitter"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="contact-us__icons">
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="assets/images/svg-sprite.svg#Calling"></use>
+              </svg>
+            </span>
+            <span class="icon-holder__label">(123) 456-7890</span>
+          </div>
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="assets/images/svg-sprite.svg#Message"></use>
+              </svg>
+            </span>
+            <span class="icon-holder__label">full.stack@overflow.land</span>
+          </div>
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="assets/images/svg-sprite.svg#Location"></use>
+              </svg>
+            </span>
+            <span class="icon-holder__label"
+              >404 Not Found Ave, Reboot City, BlueScreen 10101</span
+            >
+          </div>
+        </div>
+        <div class="contact-us__map">
+          <img src="/assets/images/map.png" />
+        </div>
+        <div class="contact-us__form">
+          <div class="form-wrapper">
+            <h3>Contact Us</h3>
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button class="btn btn--primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer__item">
+          <h6>Company</h6>
+          <a href="#">About us</a>
+          <a href="#">Our offerings</a>
+          <a href="#">Newsroom</a>
+          <a href="#">Inverstors</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__item">
+          <h6>Products</h6>
+          <a href="#">Ride</a>
+          <a href="#">Drive</a>
+          <a href="#">Deliver</a>
+          <a href="#">Eat</a>
+          <a href="#">Taxi for Business</a>
+          <a href="#">Gift cards</a>
+        </div>
+        <div class="footer__item">
+          <h6>Global citizenship</h6>
+          <a href="#">Safety</a>
+          <a href="#">Diversity and Inclusion</a>
+          <a href="#">Sustainability</a>
+        </div>
+        <div class="footer__item">
+          <h6>Travel</h6>
+          <a href="#">Reserve</a>
+          <a href="#">Cities</a>
+        </div>
+        <div class="footer__item download">
+          <a href="#">
+            <div class="footer__download">
+              <img src="/assets/images/appstore.svg" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="footer__download">
+              <img src="/assets/images/googleplay.svg" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

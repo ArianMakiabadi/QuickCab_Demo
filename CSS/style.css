@@ -166,7 +166,8 @@ h2 {
 .block_plan {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 8rem 3rem;
   margin: 2rem auto;
   padding: 1rem;
@@ -176,6 +177,7 @@ h2 {
   max-width: 40rem;
   font-size: 1.8rem;
   transition: all 0.2s ease-in-out;
+  margin: 0 2rem;
 }
 
 .plan:hover {
@@ -244,6 +246,12 @@ h2 {
 .feature {
   display: grid;
   align-items: center;
+  padding: 0 2rem;
+  gap: 0 6rem;
+}
+
+section.feature.container {
+  margin-bottom: 5rem;
 }
 
 .feature__text {
@@ -270,6 +278,10 @@ h2 {
     margin-bottom: 0;
   }
 
+  .gift-card .feature__image {
+    order: 1;
+  }
+
   .feature__image > img {
     width: 90%;
   }
@@ -279,6 +291,7 @@ h2 {
 
 .contact-us {
   display: grid;
+  margin-top: 3rem;
 }
 
 .contact-us__map {
@@ -334,6 +347,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 3rem;
 }
 
 .contact-us__icons .icon-holder {
@@ -391,7 +405,7 @@ h2 {
 .form-wrapper {
   height: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 10px 30px rgb(0, 0, 0, 0.2);
   padding: 1rem 2rem;
 }
@@ -618,13 +632,15 @@ nav.nav__expanded .nav__list {
 /*Hero Section*/
 
 .hero-section {
+  position: relative;
   width: 100%;
   height: 478px;
 }
 
-.hero-section img {
+.hero-section .banner-img {
   width: 100%;
-  height: auto;
+  height: 478px;
+  object-fit: cover;
 }
 
 .hero-wrapper {
@@ -693,6 +709,21 @@ nav.nav__expanded .nav__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.banner-phone {
+  display: none;
+  position: absolute;
+  left: 20%;
+  bottom: -40%;
+  height: auto;
+  width: 420px;
+}
+
+@media screen and (min-width: 1110px) {
+  .banner-phone {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -766,7 +797,8 @@ nav.nav__expanded .nav__list {
   transition: all 0.2s ease-in;
 }
 
-.services__tabs .tab:hover {
+.services__tabs .tab:hover,
+.services__tabs .tab.active {
   opacity: 1;
 }
 
@@ -792,6 +824,10 @@ nav.nav__expanded .nav__list {
   width: 100%;
 }
 
+.block {
+  padding: 6rem 2rem;
+}
+
 @media screen and (min-width: 1024px) {
   .services__title {
     font-size: 3.5rem;
@@ -809,5 +845,9 @@ nav.nav__expanded .nav__list {
   }
   .feature__detail {
     width: 70%;
+  }
+
+  .block {
+    padding: 10rem 2rem;
   }
 }

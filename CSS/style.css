@@ -28,6 +28,7 @@ html {
 body {
   color: var(--color-body);
   font-size: 1.4rem;
+  overflow-x: hidden; /*x Prevent horizontal scrolling */
 }
 
 a {
@@ -235,9 +236,9 @@ h2 {
 
 .container {
   max-width: 1140px;
-  /*align-items: center;*/
   align-self: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -257,19 +258,23 @@ h2 {
 
 section.feature.container {
   margin-bottom: 5rem;
+  padding: 0 2rem;
 }
 
 .feature__text {
+  align-self: center;
   margin-bottom: 3.1rem;
+  text-align: justify;
 }
 
 .feature__image > img {
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 
 .feature__image {
   text-align: center;
+  width: 85%;
   margin-bottom: 2rem;
 }
 
@@ -297,9 +302,11 @@ section.feature.container {
 .contact-us {
   display: grid;
   justify-content: center;
+  align-items: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
   gap: 3rem 4rem;
+  padding: 2rem;
 }
 
 .contact-us__map {
@@ -317,7 +324,8 @@ section.feature.container {
 
   .contact-us__form {
     grid-area: form;
-    /* max-width: 320px; */
+    padding: 2rem;
+    width: 100%;
   }
 
   .contact-us__map {
@@ -440,9 +448,17 @@ section.feature.container {
   height: 70%;
 }
 
+form .btn.btn--primary {
+  width: 90%;
+  align-self: center;
+  border-radius: 20px;
+}
+
 input,
 textarea {
   display: block;
+  width: 90%;
+  align-self: center;
   outline: 0;
   border: 0;
   resize: none;
@@ -844,7 +860,7 @@ nav.nav__expanded .nav__list {
 }
 
 .block {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 @media screen and (min-width: 1024px) {

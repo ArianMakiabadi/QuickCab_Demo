@@ -296,8 +296,10 @@ section.feature.container {
 
 .contact-us {
   display: grid;
+  justify-content: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  gap: 3rem 4rem;
 }
 
 .contact-us__map {
@@ -315,6 +317,7 @@ section.feature.container {
 
   .contact-us__form {
     grid-area: form;
+    /* max-width: 320px; */
   }
 
   .contact-us__map {
@@ -353,7 +356,9 @@ section.feature.container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 2rem;
 }
 
 .contact-us__icons .icon-holder {
@@ -363,8 +368,9 @@ section.feature.container {
 }
 
 .icon-holder__label {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   display: block;
+  max-width: 250px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -373,11 +379,14 @@ section.feature.container {
     justify-content: space-around;
   }
   .contact-us__icons .icon-holder {
+    max-width: 200px;
+    text-align: center;
     flex-direction: column;
-    margin: 1rem 1rem;
+    margin-bottom: 0;
   }
 
   .icon-holder__label {
+    order: 2;
     font-size: 1.4rem;
     margin-top: 1rem;
   }
@@ -389,13 +398,16 @@ section.feature.container {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  border-radius: 20px;
   margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
   .contact-us__social {
     justify-content: center;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   .contact-us__social .icon-container {
@@ -404,16 +416,17 @@ section.feature.container {
 }
 .contact-us__map img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .form-wrapper {
   height: 100%;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 20px;
   box-shadow: 0 10px 30px rgb(0, 0, 0, 0.2);
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .form-wrapper h3 {
@@ -441,7 +454,7 @@ textarea {
   border-radius: 39px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   font-family: "M PLUS 1p";
 }
 

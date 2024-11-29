@@ -170,6 +170,7 @@ h2 {
 .block_plan {
   display: grid;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 8rem 3rem;

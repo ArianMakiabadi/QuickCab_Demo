@@ -22,6 +22,7 @@
 /*To make each rem - 10px for easier usage of rem later on*/
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   /* font-family: sans-serif; */
 }
 
@@ -750,7 +751,7 @@ nav.nav__expanded .nav__list {
 .banner-phone {
   display: none;
   position: absolute;
-  left: 20%;
+  right: 9%;
   bottom: -40%;
   height: auto;
   width: 420px;
@@ -764,7 +765,7 @@ nav.nav__expanded .nav__list {
 
 @media screen and (min-width: 768px) {
   .hero-wrapper {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .intro-wrapper {
@@ -778,7 +779,7 @@ nav.nav__expanded .nav__list {
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 50px;
-    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .intro-btn h1 {

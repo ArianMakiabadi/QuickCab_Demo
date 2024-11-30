@@ -566,6 +566,14 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.nav.container {
+  max-width: 100%;
 }
 
 .nav__list {
@@ -672,6 +680,7 @@ nav.nav__expanded .nav__list {
   position: relative;
   width: 100%;
   height: 478px;
+  top: 54px;
 }
 
 .hero-section .banner-img {

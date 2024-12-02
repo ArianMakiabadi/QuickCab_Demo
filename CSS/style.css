@@ -315,7 +315,7 @@ section.feature.container button {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   margin-bottom: 5rem;
   gap: 3rem 4rem;
   padding: 2rem;
@@ -831,6 +831,15 @@ nav.nav__expanded .nav__list {
   justify-content: space-between;
   overflow: auto;
   padding: 5px 0 15px;
+  /* Removing the scroll bar for Firefox */
+  scrollbar-width: none;
+  /* Removing the scroll bar for Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Removing the scroll bar for webkit based browsers */
+.services__tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .services__tabs a {
@@ -916,7 +925,12 @@ nav.nav__expanded .nav__list {
 /*Travel*/
 
 .container.travel h2 {
+  margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.container.travel {
+  padding-bottom: 5rem;
 }
 
 .travel__slides {

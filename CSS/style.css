@@ -577,6 +577,7 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 2rem;
+  padding-left: 0.5rem;
   position: fixed;
   top: 0;
   z-index: 10;

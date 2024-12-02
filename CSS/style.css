@@ -134,7 +134,7 @@ h2 {
 .list {
   list-style: none;
   font-size: 1.6rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .list--inline .list__item {
@@ -580,7 +580,7 @@ textarea {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: white;
+  background-color: var(--color-navbar);
 }
 
 .nav.container {
@@ -781,13 +781,18 @@ nav.nav__expanded .nav__list {
   .banner-phone {
     display: inline;
   }
-}
 
-@media screen and (min-width: 768px) {
   .hero-wrapper {
     justify-content: flex-start;
   }
 
+  .intro-btn {
+    margin-bottom: 50px;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .intro-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -798,8 +803,6 @@ nav.nav__expanded .nav__list {
     width: 530px;
     padding: 25px;
     border-radius: 20px;
-    margin-bottom: 50px;
-    margin-left: 10%;
   }
 
   .intro-btn h1 {

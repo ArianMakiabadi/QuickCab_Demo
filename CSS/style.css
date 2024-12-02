@@ -911,3 +911,93 @@ nav.nav__expanded .nav__list {
     padding: 10rem 2rem;
   }
 }
+
+/*Travel*/
+
+.container.travel h2 {
+  margin-bottom: 3rem;
+}
+
+.travel__slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  /* Removing the scroll bar for Firefox */
+  scrollbar-width: none;
+  /* Removing the scroll bar for Internet Explorer and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Removing the scroll bar for webkit based browsers */
+.travel__slides::-webkit-scrollbar {
+  display: none;
+}
+
+.travel__slide {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel__slide:not(:last-child) {
+  padding-right: 2rem;
+}
+
+.travel__slide img {
+  height: auto;
+  max-height: 170px;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.slide_detail {
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 32px;
+  padding: 1rem 2rem;
+  transform: translateY(-60px);
+  width: 85%;
+}
+
+.slide__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slide__header p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.slide__header.badge {
+  font-size: 1.2rem;
+  padding: 0.1rem 1.3rem;
+}
+
+.slide_detail .slide__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.slide_detail .slide__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.slide_detail .slide__icons img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.slide_detail .slide__icons span {
+  color: #cacaca;
+  margin-right: 1rem;
+}

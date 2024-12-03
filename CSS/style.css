@@ -17,6 +17,7 @@
   --color-heading: #000;
   --color-body: #333333;
   --color-white: #fff;
+  --avatar-size: 50px;
 }
 
 /*To make each rem - 10px for easier usage of rem later on*/
@@ -1015,4 +1016,37 @@ nav.nav__expanded .nav__list {
 .slide_detail .slide__icons span {
   color: #cacaca;
   margin-right: 1rem;
+}
+
+.avatar__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.avatar__group .avatar {
+  border-radius: 100%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border: 3px solid white;
+  overflow: hidden;
+  margin-right: -20px;
+  cursor: pointer;
+}
+
+.avatar__group .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden__avatars {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -927,7 +927,7 @@ nav.nav__expanded .nav__list {
 
 .container.travel h2 {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .container.travel {
@@ -939,7 +939,7 @@ nav.nav__expanded .nav__list {
   flex-direction: row;
   justify-content: space-between;
   overflow-x: auto;
-  padding-bottom: 1.5rem;
+  padding: 0 2.5rem 2.5rem;
   /* Removing the scroll bar for Firefox */
   scrollbar-width: none;
   /* Removing the scroll bar for Internet Explorer and Edge */
@@ -953,29 +953,35 @@ nav.nav__expanded .nav__list {
 
 .travel__slide {
   flex: 0 0 280px;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.travel__slide:not(:last-child) {
+/* .travel__slide:not(:last-child) {
   padding-right: 2rem;
-}
+} */
 
 .travel__slide img {
-  height: auto;
-  max-height: 170px;
+  height: 170px;
   width: 100%;
   border-radius: 32px;
+  object-fit: cover;
+}
+
+.slide__image {
+  width: 85%;
+  transform: translateY(60px);
 }
 
 .slide_detail {
   background-color: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 32px;
-  padding: 1rem 2rem;
-  transform: translateY(-60px);
-  width: 85%;
+  padding: 7rem 2rem 1rem 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .slide__header {

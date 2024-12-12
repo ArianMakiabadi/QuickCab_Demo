@@ -773,10 +773,12 @@ nav.nav__expanded .nav__list {
 .banner-phone {
   display: none;
   position: absolute;
-  right: 9%;
-  bottom: -40%;
+  right: 15%;
+  bottom: -25%;
   height: auto;
-  width: 420px;
+  width: 230px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 1110px) {
